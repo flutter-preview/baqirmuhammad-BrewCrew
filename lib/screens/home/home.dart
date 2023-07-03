@@ -14,8 +14,8 @@ class Home extends StatelessWidget {
         elevation: 0.0,
         actions: <Widget>[
           TextButton.icon(
-            icon: Icon(Icons.person),
-            label: Text('Logout'),
+            icon: Icon(Icons.person, color: Colors.white),
+            label: Text('Logout', style: TextStyle(color: Colors.white)),
             onPressed: () async {
               await _auth.signOut();
             },
